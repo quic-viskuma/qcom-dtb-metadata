@@ -4,7 +4,7 @@
  
 ### Motivation & Goals
  
-Qualcomm supports multiple SoCs and boards within a single software release binary, which requires packaging all corresponding Device Tree Blobs (DTBs) into a single image. To ensure the appropriate DTB(O)s are selected for each platform, a mechanism for dynamic devicetree selection is necessary. Flattened Image Tree (FIT) is a standard file format for packaging images which is widely used in community. This format can be leveraged by UEFI firmware to facilitate DTB selection and meet platform-specific requirements. Appropriate DTB selected for the platofrm by UEFI firmware is passed to HLOS supporting EFI boot.
+Qualcomm supports multiple SoCs and boards within a single software release binary, which requires packaging all corresponding Device Tree Blobs (DTBs) into a single image. To ensure the appropriate DTB(O)s are selected for each platform, a mechanism for dynamic devicetree selection is necessary. Flattened Image Tree (FIT) is a standard file format for packaging images which is widely used in community. This format can be leveraged by UEFI firmware to facilitate DTB selection and meet platform-specific requirements. Appropriate DTB selected for the platform by UEFI firmware is passed to HLOS supporting EFI boot.
 
 #### Terminology
 - **FIT**: Flattened Image Tree.
