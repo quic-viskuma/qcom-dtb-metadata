@@ -69,19 +69,31 @@
 			fdt = "fdt-lemans-evk.dtb";
 		};
 		conf-6 {
+			compatible = "qcom,qcs9075v2-iot";
+			fdt = "fdt-lemans-evk.dtb";
+		};
+		conf-7 {
 			compatible = "qcom,qcs9100-qam";
 			fdt = "fdt-qcs9100-ride.dtb";
 		};
-		conf-7 {
+		conf-8 {
+			compatible = "qcom,qcs9100v2-qam";
+			fdt = "fdt-qcs9100-ride.dtb";
+		};
+		conf-9 {
 			compatible = "qcom,qcs8300-adp";
 			fdt = "fdt-qcs8300-ride.dtb";
 		};
-		conf-8 {
+		conf-10 {
 			compatible = "qcom,qcs8275-iot";
 			fdt = "fdt-monaco-evk.dtb";
 		};
-		conf-9 {
+		conf-11 {
 			compatible = "qcom,qcs615-adp";
+			fdt = "fdt-qcs615-ride.dtb";
+		};
+		conf-12 {
+			compatible = "qcom,qcs615v1.1-adp";
 			fdt = "fdt-qcs615-ride.dtb";
 		};
 	};
