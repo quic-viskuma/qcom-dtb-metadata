@@ -57,6 +57,10 @@
 			data = /incbin/("./arch/arm64/boot/dts/qcom/sa8775p-ride-r3.dtb");
 			type = "flat_dt";
 		};
+		fdt-hamoa-iot-evk.dtb {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/hamoa-iot-evk.dtb");
+			type = "flat_dt";
+		};
 	};
 
 	configurations {
@@ -131,6 +135,14 @@
 		conf-18 {
 			compatible = "qcom,sa8775pv2-qamr2";
 			fdt = "fdt-sa8775p-ride-r3.dtb";
+		};
+		conf-19 {
+			compatible = "qcom,hamoa-evk";
+			fdt = "fdt-hamoa-iot-evk.dtb";
+		};
+		conf-20 {
+			compatible = "qcom,hamoav2.1-evk";
+			fdt = "fdt-hamoa-iot-evk.dtb";
 		};
 	};
 };
