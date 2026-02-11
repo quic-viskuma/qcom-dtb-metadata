@@ -69,6 +69,10 @@
 			data = /incbin/("./arch/arm64/boot/dts/qcom/hamoa-iot-evk.dtb");
 			type = "flat_dt";
 		};
+		fdt-purwa-iot-evk.dtb {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/purwa-iot-evk.dtb");
+			type = "flat_dt";
+		};
 		fdt-lemans-evk-camx.dtbo {
 			data = /incbin/("./arch/arm64/boot/dts/qcom/lemans-evk-camx.dtbo");
 			type = "flat_dt";
@@ -263,6 +267,10 @@
 		conf-43 {
 			compatible = "qcom,qcs9075v2-iot-camx-el2kvm";
 			fdt = "fdt-lemans-evk.dtb", "fdt-lemans-evk-camx.dtbo", "fdt-lemans-el2.dtbo";
+		};
+		conf-44 {
+			compatible = "qcom,purwa-iot";
+			fdt = "fdt-purwa-iot-evk.dtb";
 		};
 	};
 };
